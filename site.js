@@ -4,28 +4,22 @@ const onScroll = () => nav && nav.classList.toggle('scrolled', scrollY > 10);
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const still = matchMedia('(prefers-reduced-motion:reduce)').matches;
 
-// hero: type each industry and play its video on the big stage; tabs below show progress
+// hero: crossfade the stage videos. Each clip plays its own length (between 7 and 14 seconds).
 const stage = document.getElementById('stage');
-if (stage && window.HERO) {
+if (stage && stage.querySelectorAll('video').length > 1) {
   const vids = [...stage.querySelectorAll('video')];
-  const tabs = [...document.querySelectorAll('#reelTabs button')];
-  const rot = document.getElementById('rot');
-  const DUR = 4000;
-  document.documentElement.style.setProperty('--dur', DUR / 1000 + 's');
-  let i = 0, typing, cycle;
+  const MIN = 7, MAX = 14;
+  let i = 0, timer;
+  vids.forEach(v => { v.loop = true; });
   const show = n => {
     i = n;
     vids.forEach((v, k) => { if (k === n) { v.currentTime = 0; v.play().catch(() => {}); v.classList.add('on'); } else { v.classList.remove('on'); } });
-    tabs.forEach((t, k) => { t.classList.remove('on'); void t.offsetWidth; if (k === n) t.classList.add('on'); });
-    const word = window.HERO[n];
-    clearInterval(typing);
-    if (still) { rot.textContent = word; return; }
-    let k = 0; rot.textContent = '';
-    typing = setInterval(() => { rot.textContent = word.slice(0, ++k); if (k >= word.length) clearInterval(typing); }, 45);
+    if (still) return;
+    const v = vids[n];
+    const next = () => { clearTimeout(timer); const d = Math.min(MAX, Math.max(MIN, v.duration || MIN)); timer = setTimeout(() => show((i + 1) % vids.length), d * 1000); };
+    if (v.readyState >= 1) next(); else v.addEventListener('loadedmetadata', next, { once: true });
   };
-  const start = () => { clearInterval(cycle); if (!still) cycle = setInterval(() => show((i + 1) % vids.length), DUR); };
-  tabs.forEach((t, k) => t.onclick = () => { show(k); start(); });
-  show(0); start();
+  show(0);
 }
 
 // industry picker

@@ -30,8 +30,8 @@ nav .btn{height:40px;padding:0 18px;font-size:.92rem;color:#fff}
 /* hero */
 .hero{height:calc(100svh - 70px);min-height:520px;padding:clamp(18px,3vh,40px) 0 clamp(16px,3vh,32px);display:flex}
 .hero>.wrap{display:flex;flex-direction:column;width:100%}
-.hero-top{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:clamp(16px,3vh,32px)}
-.hero h1{font-size:clamp(2rem,min(4.4vw,7.5vh),3.9rem)}
+.hero-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:clamp(16px,3vh,32px)}
+.hero h1{font-size:clamp(2.7rem,min(5.6vw,10vh),5.4rem);line-height:.98;letter-spacing:-.05em}
 .rot{display:block;color:var(--c);min-height:1.05em;white-space:nowrap}
 .rot::after{content:"";display:inline-block;width:.06em;height:.9em;background:var(--c);margin-left:.06em;vertical-align:-.08em;animation:caret 1s steps(1) infinite}
 @keyframes caret{50%{opacity:0}}
@@ -170,4 +170,39 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   .reel-tabs button{font-size:.78rem;gap:8px}
   .reel-tabs b{display:none}
 }
+
+/* one sentence per section */
+.hero-top .row{justify-content:flex-end}
+.statement{padding:clamp(110px,16vw,220px) 0;text-align:center}
+.statement p{font:600 clamp(2.4rem,6vw,5.6rem)/1.02 "Inter Tight",sans-serif;letter-spacing:-.045em;max-width:11em;margin:0 auto;text-wrap:balance}
+.statement+.problems{padding-top:0}
+@media (max-width:960px){.hero-top .row{justify-content:flex-start}}
+
+/* static hero highlight, trade pages, faq, footer links */
+.hl{color:var(--c)}
+.h1k{display:block;font:500 .85rem "Inter",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.pain{border:1px solid var(--line);border-radius:18px;padding:28px;background:#fff}
+.pain h3{font-size:1.35rem;letter-spacing:-.02em;margin-bottom:10px}
+.pain p{color:var(--muted)}
+.pain ul{margin:16px 0 0;padding-left:1.1em;color:var(--ink);font-size:.98rem}
+.pain li{margin-bottom:6px}
+.example{padding:0 0 clamp(80px,10vw,130px)}
+.example .convo{max-width:760px}
+.faq{padding:clamp(80px,10vw,130px) 0}
+.faq h2{font-size:clamp(2.1rem,4.2vw,3.6rem);margin-bottom:34px}
+.faq details{border-top:1px solid var(--line);padding:22px 0;max-width:860px}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font:600 1.2rem "Inter Tight",sans-serif;letter-spacing:-.02em;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--c);font-weight:500}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{color:var(--muted);margin-top:12px;max-width:46em}
+.foot-ind{display:flex;flex-wrap:wrap;gap:8px 22px;width:100%;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.foot-ind b{color:var(--ink);font-weight:500;width:100%}
+.foot-ind a:hover{color:var(--c)}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%}
+@media (max-width:960px){.pains{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.rot::after,.tag{animation:none}.tag{opacity:1}}
+.problems+.statement{padding-top:clamp(30px,5vw,70px)}
+.statement:has(+.problems){padding-bottom:clamp(40px,6vw,80px)}
