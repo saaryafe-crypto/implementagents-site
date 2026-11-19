@@ -44,6 +44,7 @@ nav .btn{height:40px;padding:0 18px;font-size:.92rem;color:#fff}
 .stage video.on{opacity:1}
 .reel-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:14px}
 .reel-tabs button{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--muted);font-weight:500}
+.reel-tabs b{font-weight:inherit}
 .reel-tabs button i{display:block;height:3px;border-radius:3px;background:var(--line);position:relative;overflow:hidden}
 .reel-tabs button i::after{content:"";position:absolute;inset:0;background:var(--c);transform:scaleX(0);transform-origin:left}
 .reel-tabs button.on{color:var(--ink)}
@@ -151,8 +152,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   .stage{border-radius:18px}
   .hero .sub{font-size:1rem;margin-bottom:16px}
   .hero-top{gap:14px}
-  .reel-tabs{display:flex;overflow-x:auto;scrollbar-width:none}
-  .reel-tabs button{flex:0 0 140px;font-size:.85rem}
+  .reel-tabs{gap:10px}
+  .reel-tabs button{font-size:.85rem}
   .picker{grid-template-columns:1fr}
   .inds{position:static;display:flex;overflow-x:auto;gap:6px;scrollbar-width:none}
   .inds button{white-space:nowrap;padding:10px 14px}
@@ -165,5 +166,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   .cards,.steps,.agents{grid-template-columns:1fr}
   .os-row{grid-template-columns:1fr;gap:6px}
   .tag{display:none}
+  .reel-tabs{gap:8px}
+  .reel-tabs button{font-size:.78rem;gap:8px}
+  .reel-tabs b{display:none}
 }
 @media (prefers-reduced-motion:reduce){.rot::after,.tag{animation:none}.tag{opacity:1}}
