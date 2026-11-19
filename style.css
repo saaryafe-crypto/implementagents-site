@@ -206,3 +206,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 @media (prefers-reduced-motion:reduce){.rot::after,.tag{animation:none}.tag{opacity:1}}
 .problems+.statement{padding-top:clamp(30px,5vw,70px)}
 .statement:has(+.problems){padding-bottom:clamp(40px,6vw,80px)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:36px}
+.pillar{border-top:1px solid var(--ink);padding-top:28px}
+.pillar h3{font:600 clamp(2rem,3.6vw,3.2rem)/1 "Inter Tight",sans-serif;letter-spacing:-.045em}
+.pillar p{color:var(--muted);font-size:clamp(1.05rem,1.3vw,1.2rem);margin-top:16px;max-width:20em}
+@media(max-width:760px){.pillars{grid-template-columns:1fr;gap:36px}}
+.agent.wide{grid-column:1/-1;display:flex;gap:20px;align-items:center;background:rgba(47,91,255,.14);border-color:rgba(143,168,255,.35)}
+.agent.wide .ic{margin-bottom:0;flex:none}

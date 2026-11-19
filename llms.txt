@@ -1,6 +1,6 @@
 # Implement Agents
 
-> Implement Agents sets up AI agents for US home service businesses (HVAC, plumbing, window cleaning, carpet cleaning, garage doors). The agents answer calls and texts 24/7, follow up on open quotes and remind past customers when they are due, then book the job into the company's schedule. The first 30 days are free and we do the setup. Founded by Saar and Loren, AI engineers.
+> Implement Agents sets up AI for US home service businesses (HVAC, plumbing, window cleaning, carpet cleaning, garage doors). The AI answers calls and texts 24/7, follows up on open quotes and reminds past customers when they are due, then books the job into the company's schedule. We also help with marketing: Google, reviews and the website. The first 30 days are free and we do the setup. Founded by Saar and Loren, AI engineers.
 
 ## Industries
 - [AI for HVAC companies](https://implementagents.com/hvac/): AI receptionist, replacement quote follow up, maintenance plan renewals
