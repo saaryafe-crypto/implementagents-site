@@ -1,7 +1,7 @@
 // "Get in touch" form: every booking button opens it. Full name, phone number, company.
 // Sent to our Cloudflare Worker, which emails Saar instantly so he can call right away.
 (function () {
-  var ENDPOINT = "https://formsubmit.co/ajax/saaryafe@gmail.com"; // FormSubmit emails each lead to Saar
+  var ENDPOINT = "https://formsubmit.co/ajax/947f141781a631b55cedc5695221a66e"; // FormSubmit emails each lead to Saar
   var css =
     ".lf-bg{position:fixed;inset:0;background:rgba(10,22,64,.55);display:none;align-items:center;justify-content:center;z-index:999;padding:16px}.lf-bg.on{display:flex}" +
     ".lf{background:#fff;border-radius:22px;width:100%;max-width:400px;padding:24px 22px 20px;box-shadow:0 30px 80px -20px rgba(10,22,64,.5);position:relative;font-family:Inter,-apple-system,sans-serif;color:#0b1530}" +
