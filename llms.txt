@@ -1,6 +1,6 @@
 # Implement Agents
 
-> Implement Agents sets up AI for US home service businesses (HVAC, plumbing, window cleaning, carpet cleaning, garage doors). The AI answers calls and texts 24/7, follows up on open quotes and reminds past customers when they are due, then books the job into the company's schedule. We also help with marketing: Google, reviews and the website. The first 30 days are free and we do the setup. Founded by Saar and Loren, AI engineers.
+> Implement Agents sets up AI for US home service businesses and runs it for them. It works on top of the tools a business already uses (phone, email, WhatsApp, Workiz, Jobber, Monday, Google), so there is no new software to learn. The AI answers calls and texts 24/7, follows up on open quotes, reminds past customers when they are due, books jobs into the schedule, and helps with marketing (Google, reviews, the website). Try it free for 30 days. We do the setup. No contract.
 
 ## Industries
 - [AI for HVAC companies](https://implementagents.com/hvac/): AI receptionist, replacement quote follow up, maintenance plan renewals
@@ -9,11 +9,19 @@
 - [AI for carpet cleaning companies](https://implementagents.com/carpet-cleaning/): yearly clean reminders, answering calls on the job, quote follow up
 - [AI for garage door companies](https://implementagents.com/garage-doors/): urgent call answering, new door quote follow up, tune up reminders
 
-## How it works
-- A free 20 minute call to find the problem costing the most
-- Live in about a week, trained on the company's services and prices
-- Day 30: review the jobs booked, keep it or turn it off. No contract.
+## Solutions
+- [Never missing an after hours call again](https://implementagents.com/solutions/home-missed-calls.html)
+- [Turning old estimates into booked jobs](https://implementagents.com/solutions/home-open-estimates.html)
+- [Bringing back every customer when they are due](https://implementagents.com/solutions/home-repeat-customers.html)
+
+## How we work
+- Platform: AI that answers, books and follows up across your business.
+- Deployment: Built into your business and connected to the tools you already use.
+- Partnership: We stay with you, measure every result, and grow it as you grow.
+
+## Community
+- r/BusinessAIHelp on Reddit: free guides and answers about using AI in a small business
 
 ## Contact
-- Book a call: https://cal.com/implementagents/30min
+- Get in touch: https://implementagents.com/ (leave your name, phone and company, we call you shortly)
 - Email: saar@implementagents.com
