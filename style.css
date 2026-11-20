@@ -224,3 +224,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 .stage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,64,0) 30%,rgba(10,22,64,.85) 100%);pointer-events:none;z-index:1}
 @media (max-width:960px){.hero-top{grid-template-columns:1fr;gap:16px}.hero-top .row{justify-content:flex-start}}
 .hero .kicker{color:#d4ddff;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+
+/* menu links sit on the left, next to the logo; button stays right (Saar 2026-11-20) */
+nav .wrap{justify-content:flex-start;gap:44px}
+nav .links{flex:1}
+nav .links .btn{margin-left:auto}
