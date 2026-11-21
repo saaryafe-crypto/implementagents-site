@@ -1,5 +1,5 @@
 // "Get in touch" form: every booking button opens it. Full name, phone number, company.
-// Sent to our Cloudflare Worker, which emails Saar instantly so he can call right away.
+// FormSubmit emails Saar instantly so he can call right away, and copies saar@implementagents.com so the engine counts it.
 (function () {
   var ENDPOINT = "https://formsubmit.co/ajax/947f141781a631b55cedc5695221a66e"; // FormSubmit emails each lead to Saar
   var css =
@@ -58,7 +58,7 @@
     var go = f.querySelector(".go"); go.disabled = true; go.textContent = "Sending...";
     var d = { name: vals.name, phone: fmt(vals.phone), business: vals.business, website: f.website.value, page: location.pathname,
       src: new URLSearchParams(location.search).get("utm_source") || document.referrer || "" };
-    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify({ Name: d.name, Phone: d.phone, Company: d.business, Page: d.page, Source: d.src, _honey: d.website, _subject: "Call now: " + d.phone + " " + d.business, _template: "table", _captcha: "false" }) })
+    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify({ Name: d.name, Phone: d.phone, Company: d.business, Page: d.page, Source: d.src, _honey: d.website, _subject: "Call now: " + d.phone + " " + d.business, _template: "table", _captcha: "false", _cc: "saar@implementagents.com" }) })
       .then(function (r) {
         if (!r.ok) throw 0;
         f.innerHTML = '<button type="button" class="x" aria-label="Close">&times;</button>' +
