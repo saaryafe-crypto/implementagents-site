@@ -14,6 +14,13 @@
 - [Turning old estimates into booked jobs](https://implementagents.com/solutions/home-open-estimates.html)
 - [Bringing back every customer when they are due](https://implementagents.com/solutions/home-repeat-customers.html)
 
+## Guides
+- [How much do missed calls cost a home service business?](https://implementagents.com/guides/missed-calls-cost/): a two minute way to work out the monthly cost
+- [AI receptionist or answering service?](https://implementagents.com/guides/ai-receptionist-vs-answering-service/): live answering, AI receptionist and done for you, compared
+- [How to follow up on estimates that did not close](https://implementagents.com/guides/follow-up-on-estimates/): when to follow up and what to say
+- [Why the first reply wins on Thumbtack, Angi and Google leads](https://implementagents.com/guides/speed-to-lead/): reply speed and how to answer every lead in seconds
+- [How to get past customers to book again](https://implementagents.com/guides/bring-back-past-customers/): a seasonal plan per trade, within US messaging rules
+
 ## How we work
 - Platform: AI that answers, books and follows up across your business.
 - Deployment: Built into your business and connected to the tools you already use.
