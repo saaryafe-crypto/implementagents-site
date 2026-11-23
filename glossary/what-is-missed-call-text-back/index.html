@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What Is Missed Call Text Back? A Plain Guide for Service Owners | Implement Agents</title>
+<meta name="description" content="Missed call text back sends an automatic text to anyone whose call you miss. Learn how it works, its limits, the carrier and TCPA rules, and a sample message.">
+<link rel="canonical" href="https://implementagents.com/glossary/what-is-missed-call-text-back/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<style>
+.guide{max-width:760px;margin:0 auto;padding:120px 20px 70px;color:#0b1530}
+.guide .eyebrow-g{font:600 .78rem 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#2f5bff;margin:0 0 12px}
+.guide h1{font:600 clamp(2rem,4.6vw,2.9rem)/1.08 'Inter Tight',Inter,sans-serif;letter-spacing:-.025em;margin:0 0 16px}
+.guide .intro{font-size:1.2rem;line-height:1.55;color:#3a4560;margin:0 0 34px}
+.guide h2{font:600 1.5rem 'Inter Tight',Inter,sans-serif;letter-spacing:-.015em;margin:42px 0 12px}
+.guide p,.guide li{font-size:1.06rem;line-height:1.65;color:#2a3550}
+.guide .formula{font:600 1.05rem 'JetBrains Mono',monospace;background:#eef2ff;color:#1d3fd6;border-radius:12px;padding:14px 16px}
+.guide .example{background:#fff;border:1px solid #e3e8f2;border-radius:16px;padding:16px 18px;margin:16px 0}
+.guide .tag-g{font:600 .72rem 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#5b6680}
+.guide .example p{margin:6px 0 0}
+.guide .steps-g,.guide .list-g{padding-left:22px}
+.guide .list-g li,.guide .steps-g li{margin:6px 0}
+.guide .defn{font-size:1.18rem;line-height:1.6;background:#fff;border:1px solid #e3e8f2;border-left:4px solid #2f5bff;border-radius:14px;padding:16px 18px;margin:0 0 28px}
+.guide .checked{font-size:.9rem;color:#5b6680;margin:-18px 0 26px}
+.tablebox-g{overflow-x:auto;margin:14px 0}
+.tbl-g{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e3e8f2;border-radius:14px;overflow:hidden;font-size:.97rem;min-width:520px}
+.tbl-g th,.tbl-g td{text-align:left;padding:11px 13px;border-bottom:1px solid #e3e8f2;vertical-align:top}
+.tbl-g thead th{background:#f6f8fc;color:#5b6680;font-weight:600;font-size:.88rem}
+.tbl-g tbody th{color:#0b1530;font-weight:600;width:24%}
+.tbl-g tr:last-child td,.tbl-g tr:last-child th{border-bottom:0}
+.note-g{font-size:.9rem!important;color:#5b6680!important}
+.cta-g{background:#0b1530;color:#fff;border-radius:22px;padding:28px 26px;margin:48px 0 0;display:grid;gap:14px}
+.cta-g p{color:#c8d1e8;margin:0}
+.cta-g b{font:600 1.4rem 'Inter Tight',Inter,sans-serif;color:#fff}
+.cta-g .btn{justify-self:start}
+.faq-g details{background:#fff;border:1px solid #e3e8f2;border-radius:14px;padding:14px 16px;margin:10px 0}
+.faq-g summary{font-weight:600;cursor:pointer;color:#0b1530}
+.faq-g details p{margin:8px 0 0}
+.related-g{margin-top:36px}.related-g a{display:block;color:#2f5bff;margin:6px 0;text-decoration:none}
+.src-g{margin-top:40px;font-size:.9rem;color:#5b6680}
+.src-g a{color:#2f5bff}
+.cards-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:26px 0 0}
+.cards-g a{display:block;background:#fff;border:1px solid #e3e8f2;border-radius:18px;padding:20px;text-decoration:none;color:#0b1530;transition:transform .15s,box-shadow .15s}
+.cards-g a:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(11,21,48,.35)}
+.cards-g b{display:block;font:600 1.15rem/1.25 'Inter Tight',Inter,sans-serif;margin-bottom:6px}
+.cards-g span{color:#5b6680;font-size:.97rem}
+@media (min-width:700px){.cards-g.feature a:first-child{grid-column:1/-1}}
+.terms-g{columns:2 260px;gap:24px;margin:24px 0 0;padding:0;list-style:none}.terms-g li{break-inside:avoid;margin:0 0 10px}
+.terms-g a{color:#0b1530;font-weight:600;text-decoration:none}.terms-g span{display:block;color:#5b6680;font-size:.95rem}
+.crumb{font-size:.9rem;color:#5b6680;margin:0 0 18px}.crumb a{color:#5b6680}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "What Is Missed Call Text Back? A Plain Guide for Service Owners", "description": "Missed call text back is an automation that watches your business line for unanswered, declined, or voicemail calls and sends the caller a text from your business number within seconds. The caller can reply, and the conversation continues by text."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it legal to text someone back after they call my business?", "acceptedAnswer": {"@type": "Answer", "text": "A single text that replies to their call and names your business is generally treated as a defensible use, but no FCC order says the call alone is consent. Keep it about their call, include STOP wording, and get prior written consent before sending any marketing."}}, {"@type": "Question", "name": "Can I set this up on my regular cell phone?", "acceptedAnswer": {"@type": "Answer", "text": "Not fully on an iPhone. Apple lets you decline a call and choose a text reply by hand, but automatic texting after every missed call needs a business phone service or service software."}}, {"@type": "Question", "name": "Why are customers not replying to my text back?", "acceptedAnswer": {"@type": "Answer", "text": "Check that your number is registered for business texting (A2P 10DLC). Unregistered texts can be filtered by carriers without any error showing on your side."}}]}</script>
+</head>
+<body>
+<nav id="nav"><div class="wrap"><a class="logo" href="../../">implement<b>/</b>agents</a>
+<div class="links"><a href="../../#solutions">Solutions</a><a href="../../platform.html">Platform</a><a href="../../guides/">Guides</a><a class="btn a" href="https://cal.com/implementagents/30min">Get in touch</a></div></div></nav>
+<main class="guide"><p class="crumb"><a href="../">Glossary</a></p><p class="eyebrow-g">Glossary</p>
+<h1>What Is Missed Call Text Back? A Plain Guide for Service Owners</h1><p class="defn">Missed call text back is an automation that watches your business line for unanswered, declined, or voicemail calls and sends the caller a text from your business number within seconds. The caller can reply, and the conversation continues by text.</p><h2>Why it matters to a home service owner</h2><p>When a homeowner has a leaking water heater, they rarely wait for a callback. They dial the next number in the search results, often without leaving a voicemail. Vendasta cites a CallRail survey in which 82% of people said they would call a competitor if a business did not answer. Treat that as a survey claim.</p><p>A text back does not answer the call. ZyraTalk, a vendor in this space, calls it a recovery tool, not a coverage tool. It gives the customer a reason to wait for you.</p><h2>How it works</h2><ol><li>A call to your business number goes unanswered or to voicemail.</li><li>Your phone system sends a short text from your business number within seconds.</li><li>The customer's reply lands in your team inbox, and you text or call back.</li></ol><p>Business phone services and field service software offer this as a setting. A plain iPhone does not. Apple's guide says you can decline a call and pick a text reply, but only by hand each time.</p><h2>Example</h2><div class="example"><span class="tag-g">Example</span><p>A plumber under a sink misses a call. Seconds later the caller gets: "Hi, this is Smith Plumbing. Sorry we missed your call. We are on a job. Reply with your address and the problem and we will get back to you shortly. Reply STOP to opt out." The caller replies "water heater leaking in garage." The office calls back and books the job.</p></div><h2>Limits and rules to know</h2><ul><li><b>Carrier registration.</b> Twilio says business texts sent from an app over a local number to US phones need A2P 10DLC registration. ZyraTalk warns unregistered texts can be filtered while your dashboard still shows them as sent.</li><li><b>Keep it a reply, not an ad.</b> Vendasta notes no FCC order says a call is, by itself, consent to an automated text. Get prior written consent under the TCPA before any marketing texts.</li><li><b>Honor STOP.</b> Stop texting anyone who asks.</li><li><b>Emergencies and non texters.</b> Some callers want a human now, and some ignore texts from unknown numbers.</li></ul><p class="note-g">General information, not legal advice. Texting rules changed in 2026.</p><h2>Related terms</h2><ul><li><b>Answering service:</b> live people who pick up when you cannot.</li><li><b>A2P 10DLC:</b> US carrier registration for business texting from a local number.</li><li><b>TCPA:</b> the federal law on consent for automated calls and texts.</li><li><b>AI receptionist:</b> software that answers the call itself.</li></ul>
+<h2>Quick answers</h2><div class="faq-g"><details><summary>Is it legal to text someone back after they call my business?</summary><p>A single text that replies to their call and names your business is generally treated as a defensible use, but no FCC order says the call alone is consent. Keep it about their call, include STOP wording, and get prior written consent before sending any marketing.</p></details><details><summary>Can I set this up on my regular cell phone?</summary><p>Not fully on an iPhone. Apple lets you decline a call and choose a text reply by hand, but automatic texting after every missed call needs a business phone service or service software.</p></details><details><summary>Why are customers not replying to my text back?</summary><p>Check that your number is registered for business texting (A2P 10DLC). Unregistered texts can be filtered by carriers without any error showing on your side.</p></details></div><div class="cta-g"><b>Want this running in your business?</b><p>Try it free for 30 days. We do the setup. No contract.</p><a class="btn c" href="https://cal.com/implementagents/30min">Get in touch</a></div><div class="related-g"><b>Related</b><a href="../../guides/ai-receptionist-vs-answering-service/">AI receptionist or answering service: which is right for a small contractor?</a><a href="../../guides/bring-back-past-customers/">How to get past customers to book again</a><a href="../../guides/follow-up-on-estimates/">How to follow up on estimates that did not close</a></div><p class="src-g">Sources: <a href="https://www.vendasta.com/blog/missed-call-text-back-how-it-works/" rel="nofollow noopener" target="_blank">Vendasta, How Missed Call Text Back Works and Why Local Businesses Use It</a> · <a href="https://www.zyratalk.com/blog/missed-call-text-back-how-it-works-and-its-limits/" rel="nofollow noopener" target="_blank">ZyraTalk, Missed Call Text-Back: How It Works and Its Limits</a> · <a href="https://www.twilio.com/docs/messaging/compliance/a2p-10dlc" rel="nofollow noopener" target="_blank">Twilio Docs, Programmable Messaging and A2P 10DLC</a> · <a href="https://support.apple.com/guide/iphone/answer-or-decline-incoming-calls-iph3c9947bf/ios" rel="nofollow noopener" target="_blank">Apple Support, Answer or decline incoming calls on iPhone</a></p></main>
+<footer><div class="wrap"><div class="foot-ind"><b>Industries</b><a href="../../hvac/">AI for HVAC companies</a><a href="../../plumbing/">AI for plumbing companies</a><a href="../../window-cleaning/">AI for window cleaning companies</a><a href="../../carpet-cleaning/">AI for carpet cleaning companies</a><a href="../../garage-doors/">AI for garage door companies</a></div><div class="foot-bot"><span>&copy; 2026 Implement Agents</span><span>saar@implementagents.com</span></div></div></footer>
+<script src="../../site.js"></script>
+<script src="../../lead.js" defer></script>
+</body>
+</html>

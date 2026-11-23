@@ -15,11 +15,15 @@
 - [Bringing back every customer when they are due](https://implementagents.com/solutions/home-repeat-customers.html)
 
 ## Guides
-- [How much do missed calls cost a home service business?](https://implementagents.com/guides/missed-calls-cost/): a two minute way to work out the monthly cost
-- [AI receptionist or answering service?](https://implementagents.com/guides/ai-receptionist-vs-answering-service/): live answering, AI receptionist and done for you, compared
-- [How to follow up on estimates that did not close](https://implementagents.com/guides/follow-up-on-estimates/): when to follow up and what to say
-- [Why the first reply wins on Thumbtack, Angi and Google leads](https://implementagents.com/guides/speed-to-lead/): reply speed and how to answer every lead in seconds
-- [How to get past customers to book again](https://implementagents.com/guides/bring-back-past-customers/): a seasonal plan per trade, within US messaging rules
+- [AI receptionist or answering service: which is right for a small contractor?](https://implementagents.com/guides/ai-receptionist-vs-answering-service/): Live answering, AI receptionist or done for you, compared.
+- [How to get past customers to book again](https://implementagents.com/guides/bring-back-past-customers/): A seasonal plan to bring past customers back.
+- [How to follow up on estimates that did not close](https://implementagents.com/guides/follow-up-on-estimates/): When to follow up on a quote, and what to say.
+- [Housecall Pro AI Answering Service Cost: CSR AI Review (2026)](https://implementagents.com/guides/housecall-pro-ai-answering-service-cost/): Housecall Pro CSR AI: price, plan costs, features, limits, alternatives
+- [How much do missed calls cost a home service business?](https://implementagents.com/guides/missed-calls-cost/): What missed calls cost you, worked out in two minutes.
+- [Why the first reply wins on Thumbtack, Angi and Google leads](https://implementagents.com/guides/speed-to-lead/): Why speed decides who gets the lead, and how to be first.
+
+## Glossary
+- [What Is Missed Call Text Back? A Plain Guide for Service Owners](https://implementagents.com/glossary/what-is-missed-call-text-back/): An automatic text sent to a caller when you miss their call.
 
 ## How we work
 - Platform: AI that answers, books and follows up across your business.
